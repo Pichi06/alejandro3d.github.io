@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impresiones 3D - Tienda Online</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="java/style.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+   (function(){
+      emailjs.init("uWXmx_Lxo4layvaE9"); // Reemplaza con tu Public Key de EmailJS
+   })();
+</script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+            <h1>Impresiones 3D</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#colores">Colores</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#carrito">🛒</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle">☰</button>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Descubre un Mundo en 3D</h2>
+            <p>Personaliza tus creaciones con la mejor calidad y colores vibrantes.</p>
+            <a href="#productos" class="btn-primary">Ver Productos</a>
+        </div>
+    </section>
+
+
+
+    <section id="colores" class="colores">
+        <h2>Colores Disponibles</h2>
+        <div class="colores-grid">
+            <div class="box rosa">Rosa</div>
+            <div class="box rojo">Rojo</div>
+            <div class="box azul">Azul</div>
+            <div class="box blanco">Blanco</div>
+            <div class="box negro">Negro</div>
+            <div class="box verde">Verde</div>
+        </div>
+    </section>
+
+    <section id="productos" class="productos">
+        <h2>Nuestros Productos</h2>
+        <input type="text" id="search" placeholder="Buscar productos...">
+        <div class="productos-grid">
+            <div class="producto">
+                <img src="img/orgar1.png" alt="Organizador de Maquillaje">
+                <h3>Organizador de Maquillaje</h3>
+                <p>Diseño compacto para organizar tus accesorios.</p>
+                <button class="agregar-carrito">Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/pulpo2.jpg" alt="Pulpo Articulado">
+                <h3>Pulpo Articulado</h3>
+                <p>Divertido pulpo 3D con tentáculos móviles.</p>
+                <button class="agregar-carrito">Añadir al carrito</button>
+            </div>
+            
+            <!-- Nuevos productos -->
+            <div class="producto">
+                <img src="img/barcosyfiguras.jpg" alt="Barcos y Figuras">
+                <h3>Barcos y Figuras</h3>
+                <p>Perfecto para jugar y para regalos.</p>
+                <button class="agregar-carrito">Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/pistola6disco.jpg" alt="Pistola de 6 Discos">
+                <h3>Pistola de 6 Discos</h3>
+                <p>Pasatelo bien lanzando discos.</p>
+                <button class="agregar-carrito">Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/placayoutube.jpg" alt="Placa de Youtube">
+                <h3>Placa de Youtube </h3>
+                <p>Ten tu placa de Youtube para hacer tus directos y adornar tu cuarto.</p>
+                <button class="agregar-carrito">Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/llavero.jpg" alt="Llavero Personalizado">
+                <h3>Llavero Personalizado</h3>
+                <p>Personaliza tu llavero con tu nombre o diseño favorito.</p>
+                <button class="agregar-carrito">Añadir al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="thingiverse" class="thingiverse">
+        <h2>Imprime cualquier diseño de Thingiverse</h2>
+        <p>Podemos hacer realidad cualquier impresión 3D de la página <a href="https://www.thingiverse.com/" target="_blank">Thingiverse</a>. Solo envíanos el modelo que deseas imprimir.</p>
+        <a href="https://www.thingiverse.com/" target="_blank" class="btn-thingiverse">Explorar Thingiverse</a>
+    </section>
+    
+
+    <section id="contacto" class="contacto">
+        <h2>Contáctanos</h2>
+        <form action="mailto:romeroflo2906@gmail.com" method="post" enctype="text/plain">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            <label for="procucto">Nombre del procucto que requieres :</label>
+            <textarea id="procucto" name="procucto" rows="5" required></textarea>
+
+            <label for="colores">Color del producto:</label>
+            <textarea id="colores" name="colores" rows="5" required></textarea>
+        
+            
+            <button type="submit">Enviar</button>
+        </form>
+        
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Venta de Productos 3D. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
